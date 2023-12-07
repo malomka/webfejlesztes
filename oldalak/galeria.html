@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Malomka Gabriella">
+    <meta name="copyright" content="Oktatási cél">
+    <meta name="description" content="Egy kitalált olasz étterem weboldala">
+    <title>Malmasta</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="kepek/ikon/ikon.jpg" sizes="16x16">
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="jquery/galleria-1.6.1/dist/galleria.js"></script>
+    <script src="jquery/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fotoalbum_id').galleria(
+                width = 500,
+                height = 500
+            );
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <p>MALMASTA</p>
+        <p class="nyitva">Nyitvatartás: 08:00-24:00</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="fooldal.html" class="menu">Főoldal</a></li>
+            <li><a href="etlap.html" class="menu">Étlap</a></li>
+            <li><a href="#" id="aktiv" class="menu">Galéria</a></li>
+            <li><a href="foglalas.html" class="menu">Foglalás</a></li>
+        </ul>
+    </nav>
+    <div class="fotoalbumunk">
+        Fotoalbumunk
+    </div>
+    
+    <section id="fotoalbum_id" class="fotoalbum_class">
+        <img src="kepek/galeria/galeria1.jpg" title="Spagetti" alt="Itt egy kép erről: spagetti">
+        <img src="kepek/galeria/galeria2.jpg" title="Italok" alt="Itt egy kép erről: italok">
+        <img src="kepek/galeria/galeria3.jpg" title="Székek" alt="Itt egy kép erről: székek">
+        <img src="kepek/galeria/galeria4.jpg" title="Felszolgálók" alt="Itt egy kép erről: felszolgálók">
+        <img src="kepek/galeria/galeria5.jpg" title="Mosdó" alt="Itt egy kép erről: mosdó">
+        <img src="kepek/galeria/galeria6.jpg" title="Asztalok" alt="Itt egy kép erről: asztalok">
+        <img src="kepek/galeria/galeria7.jpg" title="Ételeink" alt="Itt egy kép erről: ételeink">
+        <img src="kepek/galeria/galeria8.jpg" title="Éttermünk" alt="Itt egy kép erről: éttermünk">
+        <img src="kepek/galeria/galeria9.jpg" title="Felszolgálók" alt="Itt egy kép erről: felszolgálók">
+        <img src="kepek/galeria/galeria10.jpg" title="Ételeink" alt="Itt egy kép erről: ételeink">
+        <img src="kepek/galeria/galeria11.jpg" title="Bárpult" alt="Itt egy kép erről: bárpult">
+        <img src="kepek/galeria/galeria12.jpg" title="Éttermünk" alt="Itt egy kép erről: éttermünk">
+    </section>
+
+    <footer class="footerke">
+        <p>Elérhetőségeink</p>
+        Telefon: +045 (52) 0012<br>
+        E-mail: malmasta@pasta.hu<br>
+        Elhelyekedésünk: Budapest, Tészta u. 0<br>
+        <p>Minden jog fenntartva!</p>
+    </footer>
+</body>
+
+
+</html>

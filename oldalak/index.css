@@ -1,0 +1,673 @@
+/*MINDENRE VONATKOZIK*/
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: "betutipus";
+    letter-spacing: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: "betutipus";
+    src: url("font/static/PlayfairDisplay-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #42080e;
+    height: fit-content;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+nav ul {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav .menu:hover {
+    color: rgb(118, 77, 77);
+}
+
+header {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #42080e;
+}
+
+header p {
+    padding: 0.5vh 2vh;
+    font-weight: bold;
+    font-size: 3.5vh;
+    letter-spacing: 0.5vh;
+    color: #cebdb2;
+    text-shadow: #f9f0e7 0 0 3vh;
+}
+
+.nyitva {
+    color: #cebdb2;
+    text-shadow: 0 0 0;
+    font-size: 1.7vh;
+    letter-spacing: 0;
+    padding-bottom: 1vh;
+    font-weight: 100;
+}
+
+.menu {
+    color: #EAE0D5;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+section {
+    background-color: #EAE0D5;
+}
+
+footer {
+    background-color: #42080e;
+    height: fit-content;
+}
+
+footer p {
+    text-align: center;
+    margin: 1vh 0 1vh 0;
+    color: #EAE0D5;
+}
+
+/*FOOLDAL CSS*/
+#fooldal_article_bevezeto {
+    display: flex;
+    text-align: center;
+    background-image: url("kepek/galeria/fooldal.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    color: #EAE0D5;
+}
+
+#fooldal_article_bevezeto hr {
+    margin-left: 10%;
+    width: 80%;
+    border-top: 0;
+}
+
+#fooldal_article_bevezeto h1 {
+    font-size: 5vh;
+    padding-bottom: 1.5%;
+    padding-top: 60%;
+}
+
+#fooldal_article_bevezeto h4 {
+    font-size: 2vh;
+    padding-top: 1.5%;
+    padding-bottom: 60%;
+}
+
+#aktiv {
+    font-weight: bold;
+    color: #a28181;
+}
+
+.alcimek {
+    display: flex;
+    flex-direction: column;
+    font-size: 5vw;
+    font-weight: bold;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: #42080e;
+    font-variant-caps: small-caps;
+    text-align: center;
+}
+
+.fooldal_bevezeto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #42080e;
+    padding: 4vh;
+    margin: 0;
+    border-radius: 0;
+    color: #EAE0D5;
+    font-size: 2.1vh;
+}
+
+.fooldal_szovegek {
+    background-image: url("kepek/galeria/fooldal2.jpg");
+    padding: 10vh 4vh 10vh 4vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #f9f0e7;
+    font-size: 2vh;
+    text-align: left;
+
+}
+
+.gombocska {
+    display: flex;
+    justify-content: center;
+    padding: 2vh 4vh 2vh 4vh;
+    font-size: 2.75vh;
+    background-color: rgba(162, 129, 129, 0.37);
+    border-radius: 3vh;
+    margin: 0;
+    color: #f9f0e7;
+    text-decoration: none;
+    border: 0.25vh solid #c9beb2ae;
+    box-shadow: 0 0 30px rgba(57, 32, 35, 0.881);
+}
+
+.gombocska:hover {
+    transition: 0.5s ease;
+    font-size: 3.5vh;
+}
+
+.gombocska {
+    transition: 0.5s ease;
+    font-size: 2.75vh;
+}
+
+.gombos_szerk {
+    padding-bottom: 4vh;
+}
+
+.gombocska_szuroje {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*ÉTLAP*/
+#etlap_section .caption {
+    display: flex;
+    justify-content: center;
+    background-color: #cebdb2;
+    color: #42080e;
+    font-size: 4.5vh;
+    padding: 2vh 0;
+    font-variant-caps: small-caps;
+}
+
+#custom_teszta {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("kepek/galeria/tesztak.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 3vh;
+    color: #EAE0D5;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.alapanyagok_form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin: 2.3vh 0;
+}
+
+.tokeletes_teszta {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 2.4vh;
+    color: #42080e;
+}
+
+.tesztak img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.tesztak {
+    background-color: rgba(228, 203, 192, 0.289);
+    padding: 6vh 2vh 6vh 2vh;
+    margin: 3vh;
+    text-align: center;
+    width: 80vw;
+    border-radius: 3vh;
+    box-shadow: #887070 0 0 4vh;
+    border: solid #887070 1px;
+}
+
+#etlap_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #42080e;
+    background-color: #cebdb2;
+}
+
+#output {
+    font-size: 2.5vh;
+    padding-bottom: 3vh;
+}
+
+#etlap_section img {
+    width: 50vw;
+    box-shadow: 0 0 3vh rgba(57, 32, 35, 0.77);
+    border-radius: 100vh;
+    border: solid #887070 2px;
+    transition: 0.3s ease;
+}
+
+#etlap_section h2 {
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+#etlap_section span {
+    font-weight: bold;
+}
+
+.arak {
+    padding-top: 2.5vh;
+    font-style: italic;
+}
+
+/*GALÉRIA*/
+.fotoalbumunk {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    font-variant-caps: small-caps;
+    background-color: #000000;
+    color: #cebdb2;
+    padding: 2vh 0;
+}
+
+.galeria_bevezeto {
+    background-color: #42080e;
+    color: #cebdb2;
+}
+
+/*FOGLALÁS*/
+#urlap_container {
+    background-color: #cebdb2;
+}
+
+.urlap_cimek {
+    text-align: center;
+    font-variant-caps: small-caps;
+    font-size: 4vh;
+    padding: 2vh 0 2vh 0;
+}
+
+.boxok {
+    background-color: #42080e;
+    color: #cebdb2;
+    font-size: 2.2vh;
+    display: flex;
+    border: 0;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    padding: 1vh;
+    text-align: center;
+    border: 2px solid #887070;
+}
+
+.boxok2 {
+    background-color: #42080e;
+    color: #cebdb2;
+    font-size: 2.2vh;
+    display: flex;
+    border: 0;
+    width: 30%;
+    margin: 0 35% 0 35%;
+    padding: 1.5vh;
+    justify-content: center;
+}
+
+.labelek {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 2.5vh;
+}
+
+.footerke {
+    text-align: center;
+    color: #cebdb2;
+    padding: 2vh;
+    font-size: 1.7vh;
+}
+
+.valasz {
+    margin: 0;
+    font-size: 2.4vh;
+}
+
+.valasz1 {
+    margin: 2.8vh 0 2vh 0;
+    font-size: 2.4vh;
+}
+
+::placeholder {
+    color: #cebdb2;
+}
+
+form {
+    text-align: center;
+}
+
+.fotoalbum_class {
+    margin: auto;
+    width: 100%;
+    height: 70vh;
+    background-color: #000000;
+}
+
+label.error {
+    color: #9d0000;
+}
+
+/*tablet*/
+@media all and (min-width: 768px) {
+    header p {
+        font-size: 4.5vh;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+
+    li {
+        font-size: 2.5vh;
+    }
+
+    #fooldal_article_bevezeto h1 {
+        font-size: 9vh;
+        padding-bottom: 1.5%;
+        padding-top: 30%;
+    }
+
+    #fooldal_article_bevezeto h4 {
+        font-size: 3.4vh;
+        padding-top: 1.5%;
+        padding-bottom: 30%;
+    }
+
+    .fooldal_bevezeto {
+        font-size: 2.5vh;
+    }
+
+    .alcimek {
+        font-size: 6vh;
+    }
+
+    .fooldal_szovegek {
+        padding: 12vh 6vh 12vh 6vh;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+
+    #custom_teszta {
+        flex-direction: row;
+    }
+
+    .tesztak {
+        display: flex;
+        width: 80vw;
+        border-radius: 4vh;
+        width: 90%;
+    }
+
+    #output {
+        font-size: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .alapanyagok_form {
+        flex-basis: 50%;
+        flex-direction: column;
+        padding-top: 3vh;
+    }
+
+    #etlap_section img {
+        width: 25vh;
+        border-radius: 100vh;
+        margin: 0 4vh 0 2vh;
+    }
+
+    .etlap_leirasok {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .arak {
+        font-style: italic;
+        padding: 0 3vh 0 0;
+        font-size: 2.2vh;
+        text-align: right;
+    }
+
+    #etlap_section h2 {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 4vh;
+    }
+
+    #custom_teszta {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .alapanyagok_form {
+        flex-basis: 30%;
+    }
+
+    .tokeletes_teszta {
+        font-size: 3vh;
+    }
+
+    #sajatteszta {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .etlap_leirasok {
+        width: 90%;
+    }
+
+    #etlap_section .boxok2 {
+        margin-top: 3vh;
+    }
+
+    .proba {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .osszetevok {
+        text-align: left;
+        padding: 2vh 0;
+        font-size: 2.4vh;
+    }
+
+    .urlap_cimek {
+        font-size: 5vh;
+    }
+
+    .labelek {
+        padding-top: 2vh;
+        font-size: 2.7vh;
+    }
+
+    .valasz {
+        font-size: 2.5vh;
+    }
+
+    .fotoalbumunk {
+        font-size: 6vh;
+    }
+
+    .boxok {
+        width: 70%;
+        height: 6vh;
+        margin: 0 15%;
+    }
+
+    .kepes_etlap {
+        width: 20%;
+        height: 100%;
+
+    }
+
+    #kepes_etlap_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-image: url("kepek/galeria/urlapos.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #urlap_container {
+        width: 60%;
+    }
+
+    .footerke {
+        font-size: 2vh;
+    }
+
+}
+
+/*gep*/
+@media all and (min-width: 1000px) {
+    header p {
+        font-size: 5vh;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+
+    nav {
+        padding-top: 0.5%;
+        padding-bottom: 1%;
+    }
+
+    li {
+        font-size: 2.7vh;
+    }
+
+    #fooldal_article_bevezeto h1 {
+        padding-bottom: 1%;
+        padding-top: 15%;
+    }
+
+    #fooldal_article_bevezeto h4 {
+        font-size: 3vh;
+        padding-top: 1%;
+        padding-bottom: 15%;
+    }
+
+    .fooldal_bevezeto {
+        font-size: 2.5vh;
+    }
+
+    .alcimek {
+        font-size: 7vh;
+    }
+
+    .tesztak {
+        border-radius: 4vh;
+        width: 90%;
+    }
+
+    .arak {
+        font-size: 3vh;
+    }
+
+    .tokeletes_teszta {
+        font-size: 3.7vh;
+    }
+
+    .proba {
+        flex-wrap: nowrap;
+    }
+
+    #etlap_section img {
+        width: 25vh;
+        border-radius: 100vh;
+        margin: 0 4vh 0 2vh;
+        box-shadow: 0 0 3vh rgba(57, 32, 35, 0.77);
+        border: solid #887070 3px;
+    }
+
+    #etlap_section .caption {
+        font-size: 6vh;
+    }
+
+    .etlap_leirasok {
+        width: 90%;
+    }
+
+    .etlap_leirasok h2 {
+        text-align: left;
+    }
+
+    .urlap_cimek {
+        font-size: 6vh;
+    }
+
+    .labelek {
+        padding-top: 1.5vh;
+        font-size: 3.2vh;
+    }
+
+    .valasz {
+        font-size: 3vh;
+    }
+
+    .valasz1 {
+        font-size: 3vh;
+    }
+
+    .boxok {
+        width: 70%;
+        height: 6vh;
+        margin: 0 15%;
+        font-size: 2.5vh;
+    }
+
+    .boxok2 {
+        font-size: 3vh;
+    }
+
+    .nyitva {
+        font-size: 2vh;
+    }
+
+    .fotoalbumunk {
+        font-size: 7vh;
+    }
+
+}
