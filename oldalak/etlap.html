@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Malomka Gabriella">
+    <meta name="copyright" content="Oktatási cél">
+    <meta name="description" content="Egy kitalált olasz étterem weboldala">
+    <title>Malmasta</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="kepek/ikon/ikon.jpg" sizes="16x16">
+    <script src="jquery/javascript.js"></script>
+</head>
+
+<body>
+    <header>
+        <p>MALMASTA</p>
+        <p class="nyitva">Nyitvatartás: 08:00-24:00</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="fooldal.html" class="menu">Főoldal</a></li>
+            <li><a href="#" id="aktiv" class="menu">Étlap</a></li>
+            <li><a href="galeria.html" class="menu">Galéria</a></li>
+            <li><a href="foglalas.html" class="menu">Foglalás</a></li>
+        </ul>
+    </nav>
+
+    <section id="etlap_section">
+        <p class="tokeletes_teszta">
+            Nem tudsz választani? Engedd meg, hogy összeállítsuk számodra a tökéletes tésztát!
+        </p>
+        <div id="custom_teszta">
+
+            <form action="#" id="sajatteszta" novalidate>
+                <div class="proba">
+                    <div class="alapanyagok_form">
+                        <p>Válaszd ki a tésztát!</p>
+                        <label for="teszta1"><input type="radio" name="tesztafajtak" id="teszta1" value="1290"
+                                class="">Spaghetti</label>
+                        <label for="teszta2"><input type="radio" name="tesztafajtak" id="teszta2" value="1290"
+                                class="">Linguine</label>
+                        <label for="teszta3"><input type="radio" name="tesztafajtak" id="teszta3" value="1290"
+                                class="">Rigatoni</label>
+                        <label for="teszta4"><input type="radio" name="tesztafajtak" id="teszta4" value="1290"
+                                class="">Penne</label>
+                        <label for="teszta5"><input type="radio" name="tesztafajtak" id="teszta5" value="1290"
+                                class="">Farfalle</label>
+                        <label for="teszta6"><input type="radio" name="tesztafajtak" id="teszta6" value="1290"
+                                class="">Fettuchine</label>
+                        <label for="teszta7"><input type="radio" name="tesztafajtak" id="teszta7" value="1290"
+                                class="">Pappardelle</label>
+                    </div>
+                    
+                    <div class="alapanyagok_form">
+                        <p>Válaszd ki a szószt! (ingyenes)</p>
+                        <label for="szosz1"><input type="radio" name="szoszok" id="szosz1" value="0"
+                                class="">Paradicsomszósz</label>
+                        <label for="szosz2"><input type="radio" name="szoszok" id="szosz2" value="0" class="">Alfredo
+                            szósz</label>
+                        <label for="szosz3"><input type="radio" name="szoszok" id="szosz3" value="0"
+                                class="">Olívaolaj</label>
+                        <label for="szosz4"><input type="radio" name="szoszok" id="szosz4" value="0" class="">Zöld
+                            pesto</label>
+                        <label for="szosz5"><input type="radio" name="szoszok" id="szosz5" value="0" class="">Piros
+                            pesto</label>
+                        <label for="szosz6"><input type="radio" name="szoszok" id="szosz6" value="0"
+                                class="">Olívaolaj</label>
+                        <label for="szosz7"><input type="radio" name="szoszok" id="szosz7" value="0" class="">Nem kérek
+                            rá
+                            szószt!</label>
+                    </div>
+                    
+                    <div class="alapanyagok_form">
+                        <p>Válaszd ki a húst!</p>
+                        <label for="hus1"><input type="checkbox" name="hus" value="810" id="hus1">Csirkehús</label>
+                        <label for="hus2"><input type="checkbox" name="hus" value="890" id="hus2">Darált
+                            marhahús</label>
+                        <label for="hus3"><input type="checkbox" name="hus" value="720" id="hus3">Darált
+                            sertéshús</label>
+                        <label for="hus4"><input type="checkbox" name="hus" value="990" id="hus4">Garnéla</label>
+                        <label for="hus5"><input type="checkbox" name="hus" value="980" id="hus5">Kagyló</label>
+                        <label for="hus6"><input type="checkbox" name="hus" value="780" id="hus6">Tofu</label>
+                        <label for="hus7"><input type="checkbox" name="hus" value="0" id="hus7">Egyikből sem kérek
+                            rá!</label>
+                    </div>
+                    
+                    <div class="alapanyagok_form">
+                        <p>Válassz feltéteket!</p>
+                        <label for="feltet1"><input type="checkbox" name="feltet" value="140"
+                                id="feltet1">Paradicsom</label>
+                        <label for="feltet2"><input type="checkbox" name="feltet" value="210" id="feltet2">Szárított
+                            paradicsom</label>
+                        <label for="feltet3"><input type="checkbox" name="feltet" value="350" id="feltet3">Sült
+                            padlizsán</label>
+                        <label for="feltet4"><input type="checkbox" name="feltet" value="200" id="feltet4">Gomba</label>
+                        <label for="feltet5"><input type="checkbox" name="feltet" value="200" id="feltet5">Bacon</label>
+                        <label for="feltet6"><input type="checkbox" name="feltet" value="110"
+                                id="feltet6">Vöröshagyma</label>
+                        <label for="feltet7"><input type="checkbox" name="feltet" value="0" id="feltet7">Egyikből sem
+                            kérek
+                            rá!</label>
+                    </div>
+                    
+                    <div class="alapanyagok_form">
+                        <p>Válassz extrákat!</p>
+                        <label for="extra1"><input type="checkbox" name="extra" value="190" id="extra1">Parmezán
+                            sajt</label>
+                        <label for="extra2"><input type="checkbox" name="extra" value="190" id="extra2">Ricotta
+                            sajt</label>
+                        <label for="extra3"><input type="checkbox" name="extra" value="190" id="extra3">Mozzarella
+                            sajt</label>
+                        <label for="extra4"><input type="checkbox" name="extra" value="90"
+                                id="extra4">Bazsalikom</label>
+                        <label for="extra5"><input type="checkbox" name="extra" value="90" id="extra5">Oregánó</label>
+                        <label for="extra6"><input type="checkbox" name="extra" value="190" id="extra6">Pirított
+                            fenyőmag</label>
+                        <label for="extra7"><input type="checkbox" name="extra" value="120" id="extra7">Chili
+                            paprika</label>
+                    </div>
+                </div>
+
+                <input type="submit" value="Elküld" class="boxok2" id="elkuld"><br>
+
+                <p id="output"></p>
+            </form>
+        </div>
+        <p class="caption">Étlapunk</p>
+        <div class="tesztak">
+            <img src="kepek/etlap/ravioli.jpg" alt="Itt egy kép erről: Ravioli dell'Amore">
+            <div class="etlap_leirasok">
+                <h2>Ravioli dell'Amore</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Házi készítésű tojásos ravioli<br>
+                    <span>Töltelék:</span> Friss ricotta sajt és spenót, finom fűszerekkel<br>
+                    <span>Öntet:</span> Parmezános vajmártás, friss bazsalikommal
+                </div>
+                <p class="arak">2 590.- Ft</p>
+
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/bolognese.jpg" alt="Itt egy kép erről: Tagliatelle alla Bolognese">
+            <div class="etlap_leirasok">
+                <h2>Tagliatelle alla Bolognese</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Hosszú, lapos tagliatelle<br>
+                    <span>Mártás:</span> Lassan főzött bolognai ragu, marhahús és paradicsommal<br>
+                    <span>Tetején:</span> Frissen reszelt parmezán
+                </div>
+                <p class="arak">2 690.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/linguine.jpg" alt="Itt egy kép erről: Itt egy kép erről: Linguine ai Frutti di Mare">
+            <div class="etlap_leirasok">
+                <h2>Linguine ai Frutti di Mare</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Lapos linguine<br>
+                    <span>Tenger gyümölcsei:</span> Garnélarák, kagylók, polip és kalmár<br>
+                    <span>Öntet:</span> Fokhagymás paradicsom és fehérbor alapú szósz
+                </div>
+                <p class="arak">2 990.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/tortellini.jpg" alt="Itt egy kép erről: Tortellini alla Panna">
+            <div class="etlap_leirasok">
+                <h2>Tortellini alla Panna</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Tortellini (húsos töltelékkel)<br>
+                    <span>Öntet:</span> Tejszínes, gombás szósz friss petrezselyemmel
+                </div>
+                <p class="arak">2 690.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/pappardelle.jpg" alt="Itt egy kép erről: Pappardelle al Funghi">
+            <div class="etlap_leirasok">
+                <h2>Pappardelle al Funghi</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Széles pappardelle<br>
+                    <span>Gomba:</span> Friss erdei gombák, fokhagyma és olívaolaj<br>
+                    <span>Dekor:</span> Grillezett fenyőmag és parmezán forgácsok
+                </div>
+                <p class="arak">2 890.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/gnocchi.jpg" alt="Itt egy kép erről: Gnocchi alla Sorrentina">
+            <div class="etlap_leirasok">
+                <h2>Gnocchi alla Sorrentina</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Burgonya gnocchi<br>
+                    <span>Mozzarella:*</span> Friss mozzarella és paradicsom szósz<br>
+                    <span>Bazsalikom:</span> Friss bazsalikomlevél
+                </div>
+                <p class="arak">2 590.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/aglio.jpg" alt="Itt egy kép erről: Spaghetti Aglio e Olio">
+            <div class="etlap_leirasok">
+                <h2>Spaghetti Aglio e Olio</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Vékony spagetti<br>
+                    <span>Öntet:</span> Olívaolaj, fokhagyma, chili és petrezselyem<br>
+                    <span>Parmezán:*</span> Reszelt parmezán a tetején
+                </div>
+                <p class="arak">2 190.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/alfredo.jpg" alt="Itt egy kép erről: Fettuccine Alfredo con Pollo">
+            <div class="etlap_leirasok">
+                <h2>Fettuccine Alfredo con Pollo</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Széles fettuccine<br>
+                    <span>Mártás:</span> Gazdag tejszínes alfredo szósz, sült csirkemellcsíkokkal<br>
+                    <span>Díszítés:</span> Frissen őrölt fekete bors
+                </div>
+                <p class="arak">2 690.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/farfalle.jpg" alt="Itt egy kép erről: Farfalle al Pesto Genovese">
+            <div class="etlap_leirasok">
+                <h2>Farfalle al Pesto Genovese</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Pillangó tészta (farfalle)<br>
+                    <span>Pesto:*</span> Friss bazsalikom, fenyőmag, parmezán és olívaolaj<br>
+                    <span>Dekor:</span> Pesto és pirított fenyőmag
+                </div>
+                <p class="arak">2 390.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/orechiette.jpg" alt="Itt egy kép erről: Orecchiette con Broccoli e Salsiccia">
+            <div class="etlap_leirasok">
+                <h2>Orecchiette con Broccoli e Salsiccia</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Fül alakú orecchiette<br>
+                    <span>Öntet:</span> Brokkoli, füstölt kolbász és parmezán<br>
+                    <span>Extra:*</span> Frissen őrölt fekete bors
+                </div>
+                <p class="arak">2 590.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/cannelloni.jpg" alt="Itt egy kép erről:Cannelloni Ripieni di Carne">
+            <div class="etlap_leirasok">
+                <h2>Cannelloni Ripieni di Carne</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Henger alakú cannelloni<br>
+                    <span>Töltelék:</span> Házi készítésű húsraguval töltve, béchamel mártással<br>
+                    <span>Öntet:</span> Paradicsom szósz, friss bazsalikommal
+                </div>
+                <p class="arak">2 690.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/seppia.jpg" alt="Itt egy kép erről: Linguine al Nero di Seppia">
+            <div class="etlap_leirasok">
+                <h2>Linguine al Nero di Seppia</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Fekete tinta linguine<br>
+                    <span>Tenger gyümölcsei:</span> Garnélarák, kagylók, polip és tintahal<br>
+                    <span>Öntet:</span> Fokhagymás fehérbor és paradicsom szósz
+                </div>
+                <p class="arak">2 890.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/paccheri.jpg" alt="Itt egy kép erről: Paccheri con Melanzane e Ricotta Salata">
+            <div class="etlap_leirasok">
+                <h2>Paccheri con Melanzane e Ricotta Salata</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Nagy, henger alakú paccheri<br>
+                    <span>Hozzávalók:</span> Sült padlizsán, ricotta sajt, paradicsom, bazsalikom<br>
+                    <span>Dekor:*</span> Reszelt sózott ricotta
+                </div>
+                <p class="arak">2 490.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/tartufo.jpg" alt="Itt egy kép erről: Tortelloni al Tartufo">
+            <div class="etlap_leirasok">
+                <h2>Tortelloni al Tartufo</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Tortelloni (tartufótöltelékkel)<br>
+                    <span>Mártás:</span> Szárított paradicsom, fehérbor és fekete trüffelolaj<br>
+                    <span>Díszítés:*</span> Frissen reszelt parmezán és friss petrezselyem
+                </div>
+                <p class="arak">2 690.- Ft</p>
+            </div>
+        </div>
+        <div class="tesztak">
+            <img src="kepek/etlap/garganelli.jpg" alt="Itt egy kép erről: Garganelli con Zafferano e Gamberi">
+            <div class="etlap_leirasok">
+                <h2>Garganelli con Zafferano e Gamberi</h2>
+                <div class="osszetevok">
+                    <span>Tészta:</span> Kis tubusokból álló garganelli<br>
+                    <span>Öntet:</span> Sáfrányos tejszínes szósz garnélarákkal<br>
+                    <span>Extra:*</span> Sáfrányos dekor és frissen őrölt fekete bors
+                </div>
+                <p class="arak">2 390.- Ft</p>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+    </aside>
+
+    <footer class="footerke">
+        <p>Elérhetőségeink</p>
+        Telefon: +045 (52) 0012<br>
+        E-mail: malmasta@pasta.hu<br>
+        Elhelyekedésünk: Budapest, Tészta u. 0<br>
+        <p>Minden jog fenntartva!</p>
+    </footer>
+</body>
+
+
+</html>
